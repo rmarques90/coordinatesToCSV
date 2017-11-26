@@ -6,3 +6,5 @@ Utilize essa API para salvar coordenadas que não podem ser adquiridas via API e
 Lembre-se de trocar a API_KEY do GOOGLE MAPS API FOR JAVASCRIPT.
 
 Para executar, iniciar o arquivo index.html
+
+Google Maps JS API: https://developers.google.com/maps/documentation/javascript/
