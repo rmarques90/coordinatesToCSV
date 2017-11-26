@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Salvar Coordenadas em CSV - Google Maps API</title>
+
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:600" type="text/css" rel="stylesheet" />
+        <link href="estilo.css" type="text/css" rel="stylesheet" />
+
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAZzwO4MrvNHoVx_bzKciU-feCjjvv1Rjo"></script>
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="mapa.js"></script>
+        <script type="text/javascript" src="jquery-ui.custom.min.js"></script>
+        <script src="alasql.min.js"></script>
+
+    </head>
+    
+    <body>
+
+        <div id="apresentacao">
+
+            <h1>Salvar Coordenadas em CSV - Google Maps API</h1>
+    
+            <form method="post" action="index.html">    
+                <fieldset>
+
+                    <legend>Salvar Coordenadas em CSV - Google Maps API</legend>
+            
+                    <div class="campos">
+                        <!--<label for="txtEndereco">Endereço:</label>-->
+                        <input type="hidden" id="txtEndereco" name="txtEndereco" />
+                        <input type="hidden" id="btnEndereco" name="btnEndereco" value="Mostrar no mapa" />
+                        <p>
+                            <label for="txtLatitude">Latitude:</label>
+                            <input type="text" id="txtLatitude" name="txtLatitude" />
+                        </p>
+                        <p>
+                            <label for="txtLongitude">Longitude:</label>
+                            <input type="text" id="txtLongitude" name="txtLongitude" />
+                        </p>
+                    </div>
+
+                    <div id="mapa"></div>
+                    
+                	<input type="submit" value="Salvar em Array" name="btnEnviar" />
+                </fieldset>
+            </form>
+            <br>
+            <button class="buttonCSV" onclick="window.exportData()">Exportar Coordenadas para CSV</button>
+        </div>
+    
+    </body>
+</html>
